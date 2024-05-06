@@ -32,7 +32,9 @@ The dashboard is user-friendly and includes help tooltips and text for interpret
 	- Win rates
 	- Average deal size
 	- Average time taken to win and close deals
+ 
 The report also offers an overview of the percentage of discounted opportunities by each individual, followed by the average discount percentage they have given away, providing insights into which individuals give away a higher proportion of sales in discounts. Understanding the discounts offered can demonstrate their impact on the average opportunity size.
+
 - Deal Pipeline Analysis: Managers can explore the overall sales pipeline to understand the distribution of deals across various stages (e.g., prospecting, engaging, closed-won, closed-lost), helping them prioritise efforts and allocate resources efficiently.
 - Product Sales: Managers can obtain a comprehensive overview of product sales for each quarter, including insights into the number of products sold within their opportunities.
 - Performance by Sales Teams: Managers can view where they stand relative to other teams in performance in each metric.
