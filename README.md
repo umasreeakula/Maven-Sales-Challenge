@@ -16,10 +16,10 @@ I used Power BI to build the report. Find it [here](https://github.com/umasreeak
 
 ### Business Scenario:
 MavenTech is a company based in the United States that sells computer hardware to large businesses. Recently, MavenTech implemented a new CRM system to manage its sales opportunities. However, the company faces a challenge: limited visibility of the sales data beyond the CRM platform.
-As a BI Developer for MavenTech, I have developed an interactive dashboard to enable sales managers to track their team's quarterly performance effectively. MavenTech can now extract valuable insights from sales data from the CRM system, enabling actionable decision-making for sales managers.
+As a BI Developer for MavenTech, I have developed an interactive dashboard to enable sales managers to track their team's quarterly performance effectively. MavenTech can now extract valuable insights from sales data from the CRM system, making it easier to make data-driven decisions.
 
 #### Assumptions:
-- The dashboard prioritises detailed performance insights at an individual level, reflecting the assumption that sales managers are primarily concerned with assessing the performance of team members. This approach allows for benchmarking individuals against each other. Additionally, the dashboard assumes that teams can access each other's performance data, enabling comparative analysis to assess relative performance across teams.
+- The dashboard prioritises detailed performance insights at an individual level, reflecting the assumption that sales managers are primarily concerned with assessing the performance of team members. This approach allows for benchmarking individuals against each other. Teams can access each other's performance data, enabling comparative analysis to assess relative performance across teams.
 - The dashboard allows managers to retrospectively analyse performance over the year, organised by quarters, to track and evaluate long-term progress effectively.
 
 The dashboard is user-friendly and includes help tooltips and text for interpreting the graphs, metrics and how to access information from them.
@@ -38,7 +38,7 @@ The report also offers an overview of the percentage of discounted opportunities
 - Deal Pipeline Analysis: Managers can explore the overall sales pipeline to understand the distribution of deals across various stages (e.g., prospecting, engaging, closed-won, closed-lost), helping them prioritise efforts and allocate resources efficiently.
 - Product Sales: Managers can obtain a comprehensive overview of product sales for each quarter, including insights into the number of products sold within their opportunities.
 - Performance by Sales Teams: Managers can view where they stand relative to other teams in performance in each metric.
-- Quarter-over-Quarter Performance Summary: Managers can gain insights into the overall team's performance changes quarter-over-quarter. Additionally, they can delve into each sales agent's quarter-over-quarter performance, examining total sales, deals won, win rates, average deal size, and the time taken to close winning deals. 
+- Quarter-over-Quarter Performance Summary: Managers can gain insights into the overall team's performance changes quarter-over-quarter. They can also delve into each sales agent's quarter-over-quarter performance, examining total sales, deals won, win rates, average deal size, and the time taken to close winning deals. 
 
 The report also highlights the number of deals lost by the team and individual members, alongside the wins. It also includes the potential sales of each team to give an overview of the impact the engaging deals have.
 
