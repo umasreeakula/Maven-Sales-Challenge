@@ -12,7 +12,7 @@ The data model was simple, and the dataset did not need much cleaning except for
 - I did a basic merge of the sales pipeline and product tables using the related "product" column to align the data.
 - Furthermore, I merged the sales teams with the sales pipeline table based on the sales agent column to integrate relevant information on managers.
 
-I used Power BI to build the report. Find it [here](https://github.com/umasreeakula/Maven-Sales-Challenge/blob/main/MavenTech%20-%20Quarterly%20Sales%20Team%20Performance.pbix).
+I used Power BI to build the dashboard. Find it [here](https://github.com/umasreeakula/Maven-Sales-Challenge/blob/main/MavenTech%20-%20Quarterly%20Sales%20Team%20Performance.pbix).
 
 ### Business Scenario:
 MavenTech is a company based in the United States that sells computer hardware to large businesses. Recently, MavenTech implemented a new CRM system to manage its sales opportunities. However, the company faces a challenge: limited visibility of the sales data beyond the CRM platform.
