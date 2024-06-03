@@ -19,8 +19,9 @@ MavenTech is a company based in the United States that sells computer hardware t
 As a BI Developer for MavenTech, I have developed an interactive dashboard to enable sales managers to track their team's quarterly performance effectively. MavenTech can now extract valuable insights from sales data from the CRM system, making it easier to make data-driven decisions.
 
 #### Assumptions:
-- The dashboard prioritises detailed performance insights at an individual level, reflecting the assumption that sales managers are primarily concerned with assessing the performance of team members. This approach allows for benchmarking individuals against each other. Teams can access each other's performance data, enabling comparative analysis to assess relative performance across teams.
-- The dashboard allows managers to retrospectively analyse performance over the year, organised by quarters, to track and evaluate long-term progress effectively.
+- The dashboard prioritises detailed performance insights at an individual level, reflecting the assumption that sales managers are primarily concerned with assessing the performance of team members. This approach allows for benchmarking individuals against each other.
+- Teams can access each other's performance data, enabling comparative analysis to assess relative performance across teams.
+- Managers would like to track the team's performance over the year. The dashboard allows managers to retrospectively analyse performance over the year, organised by quarters, to track and evaluate long-term progress effectively.
 
 The dashboard is user-friendly and includes help tooltips and text for interpreting the graphs, metrics and how to access information from them.
 
