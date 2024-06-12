@@ -10,7 +10,7 @@ This dataset, available on [Maven Analytics](https://mavenanalytics.io/data-play
 The data model was simple, and the dataset did not need much cleaning except for a couple of things:
 - In the sales pipeline table, I changed the product name from "GTXPro" to "GTX Pro" to ensure consistency when merging the sales pipeline and product tables. A simple find and replace value within Power Query was sufficient. 
 - I did a basic merge of the sales pipeline and product tables using the related "product" column to align the data.
-- Furthermore, I merged the sales teams with the sales pipeline table based on the sales agent column to integrate relevant information on managers.
+- Furthermore,  I merged the sales teams with the sales pipeline table based on the sales agent column to integrate relevant information on managers. I also merged the accounts table with the sales pipeline using the account column.
 
 I used Power BI to build the dashboard. Find it [here](https://github.com/umasreeakula/Maven-Sales-Challenge/blob/main/MavenTech%20-%20Quarterly%20Sales%20Team%20Performance.pbix).
 
@@ -21,7 +21,7 @@ As a BI Developer for MavenTech, I have developed an interactive dashboard to en
 #### Assumptions:
 - The dashboard prioritises detailed performance insights at an individual level, reflecting the assumption that sales managers are primarily concerned with assessing the performance of team members. This approach allows for benchmarking individuals against each other.
 - Teams can access each other's performance data, enabling comparative analysis to assess relative performance across teams.
-- Managers would like to track the team's performance over the year. The dashboard allows managers to retrospectively analyse performance over the year, organised by quarters, to track and evaluate long-term progress effectively.
+- Managers would like to track the team's performance quarter to quarter. The dashboard allows managers to retrospectively analyse performance over the year, organised by quarters, to track and evaluate long-term progress effectively.
 
 The dashboard is user-friendly and includes help tooltips and text for interpreting the graphs, metrics and how to access information from them.
 
@@ -34,14 +34,14 @@ The dashboard is user-friendly and includes help tooltips and text for interpret
 	- Average deal size
 	- Average time taken to win and close deals
  
-The report also offers an overview of the percentage of discounted opportunities by each individual, followed by the average discount percentage they have given away, providing insights into which individuals give away a higher proportion of sales in discounts. Understanding the discounts offered can demonstrate their impact on the average opportunity size.
+The dashboard also offers an overview of the percentage of discounted opportunities by each individual, followed by the average discount percentage they have given away, providing insights into which individuals give away a higher proportion of sales in discounts. Understanding the discounts offered can demonstrate their impact on the average opportunity size.
 
 - Deal Pipeline Analysis: Managers can explore the overall sales pipeline to understand the distribution of deals across various stages (e.g., prospecting, engaging, closed-won, closed-lost), helping them prioritise efforts and allocate resources efficiently.
-- Product Sales: Managers can obtain a comprehensive overview of product sales for each quarter, including insights into the number of products sold within their opportunities.
+- Product Sales: Managers can obtain a comprehensive overview of product sales for each quarter, including insights into the number of products sold within their opportunities, the number of product deals lost and discounts offered.
 - Performance by Sales Teams: Managers can view where they stand relative to other teams in performance in each metric.
 - Quarter-over-Quarter Performance Summary: Managers can gain insights into the overall team's performance changes quarter-over-quarter. They can also delve into each sales agent's quarter-over-quarter performance, examining total sales, deals won, win rates, average deal size, and the time taken to close winning deals. 
 
-The report also highlights the number of deals lost by the team and individual members, alongside the wins. It also includes the potential sales of each team to give an overview of the impact the engaging deals have.
+The dashboard also highlights the number of deals lost by the team and individual members, alongside the wins. Managers can view these in a table by clicking the right arrow (->) near the team's closed deals visual on the first page of the dashboard. It also includes the open opportunities and potential sales amount (click on "View Opportunities" to view these) for each team to give an overview of the impact these have.
 
 ### Key Metrics:
 Based on the available data, I selected the following sales metrics for performance comparison:
@@ -54,19 +54,26 @@ Based on the available data, I selected the following sales metrics for performa
 These metrics enable managers to gauge the effectiveness of their team's and agents' sales strategy and process in successfully closing deals and identifying particular strengths and opportunities on the team.
 
 ### The Dashboard:
-The report's first page is a detailed summary of the team's and the sales reps' performances for the selected quarter. Managers can utilise two drop-down menus—one for choosing their name and the other for choosing a quarter. Upon selecting/hovering over a visual, managers can hover over it to find a tooltip (represented by a question mark) for assistance in interpreting the visual.
-The cards at the top represent the team's averages for the key metrics, serving as benchmarks to evaluate individual team members' performance. The table and accompanying graphs summarise the sales agents' quarter performance. To view their specific results, clicking on a sales agent's name in the table will update the graphs accordingly.
-The graph depicting pipeline stages offers an overview of the pipeline at the end of the year, along with potential closing sales. 
-Explore the graph representing the team's closed-won and closed-lost deals in more detail to analyse the breakdown for each sales representative. The tooltip provides additional assistance.
+The dashboard's first page is a detailed summary of the team's and the sales reps' performances for the selected quarter. Managers can utilise two drop-down menus—one for choosing their name and the other for choosing a quarter. Upon selecting/hovering over a visual, managers can hover over it to find a tooltip (represented by a question mark) for assistance in interpreting the visual.
+The card at the top represents the team's averages for the key metrics, serving as benchmarks to evaluate individual team members' performance. It also includes the previous quarter's metrics to help managers compare performance. The tables and accompanying graphs summarise the sales agents' quarter performance. To view their specific results, clicking on a sales agent's name in the first graph will update the other charts and tables accordingly.
+The graph depicting pipeline stages offers an overview of the pipeline at the end of the year, along with open opportunities.
 
-![MavenTech - Selected Quarter Performance](https://github.com/umasreeakula/Maven-Sales-Challenge/assets/163797397/7398ea83-cf19-4639-91a9-a15b1a706251)
+![Quarterly Performance Snapshot](https://github.com/umasreeakula/Maven-Sales-Challenge/assets/163797397/b43a8ff9-14f0-4105-b3bc-b9c75942fb1c)
 
-The second page provides an overview of performance by every team in each metric. Managers can observe where their team ranks relative to others in performance by the metric for every quarter if they'd like to know. They can utilise the drop-down menu to select a specific quarter for analysis.
+The closed deals table from the right arrow button near the team's closed deals card:
 
-![MavenTech - Selected Quarter Team Performance Ranking](https://github.com/umasreeakula/Maven-Sales-Challenge/assets/163797397/ddad30dc-4a51-4254-88b9-823e5ef46705)
+![Closed Deals](https://github.com/umasreeakula/Maven-Sales-Challenge/assets/163797397/c34d89f7-682a-4cc4-b349-f0ac9cdd9a51)
 
-The third page offers a quarter-over-quarter performance summary for managers to analyse how the team and individual sales agents have performed in the current quarter (selected from the drop-down menu) compared to the previous quarter. Clicking on a bar in any of the graphs can highlight the specific results for the individual, including the sales results from the table.
+The open opportunities table from the "View Opportunities" button on the Potential Sales card:
 
-![MavenTech - QoQ Performance Summary](https://github.com/umasreeakula/Maven-Sales-Challenge/assets/163797397/a12949a7-955d-4d07-a51a-5a51686713cf)
+![Open Opps](https://github.com/umasreeakula/Maven-Sales-Challenge/assets/163797397/b30595a8-665d-40f3-83ab-7a18483fbeed)
 
-Graphs on the second and third pages also feature tooltips for additional assistance, similar to the first page of the report. These tooltips become available upon selecting or hovering over the visuals, providing helpful information to managers as needed.
+The second page provides an overview of performance by every team in each metric. Managers can observe where their team ranks relative to others in performance by the metric for every quarter if they'd like to know.
+
+![Team Performance Comparison](https://github.com/umasreeakula/Maven-Sales-Challenge/assets/163797397/e97f8234-f2e1-4f45-9597-ae85fb8c6932)
+
+The third page offers a quarter-over-quarter performance summary for managers to analyse how the team and individual sales agents have performed in the current quarter (selected from the drop-down menu) compared to the previous quarter. Clicking a bar from the team's graphs can highlight the team's performance for that quarter. Clicking on a bar in any of the second set of graphs can highlight the specific results for the individual. 
+
+![QoQ Performance Summary](https://github.com/umasreeakula/Maven-Sales-Challenge/assets/163797397/28762c5d-cc07-4477-852c-7eab8340f154)
+
+Graphs on the second and third pages also feature tooltips for additional assistance, similar to the dashboard's first page. These tooltips become available upon selecting or hovering over the visuals, providing helpful information to managers as needed.
